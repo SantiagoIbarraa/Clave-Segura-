@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clave Segura Pro</title>
+    <!-- Corregido: nombre del archivo CSS -->
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <main class="contenedor">
+        <h2>Clave Segura 🔐</h2>
+        <section class="output">
+            <input type="text" id="claveGenerada" readonly placeholder="Tu clave aparecerá aquí">
+            <button id="copiar">Copiar</button>
+        </section>
+        <section class="config">
+            <label for="tam">Tamaño: <span id="tamValor">10</span></label>
+            <input type="range" id="tam" min="6" max="25" value="10">
+            <label><input type="checkbox" id="mayus"> Incluir MAYÚS</label>
+            <label><input type="checkbox" id="num" checked> Números</label>
+            <label><input type="checkbox" id="simbolos"> Símbolos</label>
+        </section>
+        <button id="generar">Crear Contraseña</button>
+    </main>
+    <!-- Corregido: nombre del archivo JS -->
+    <script src="main.js"></script>
+</body>
+</html>
